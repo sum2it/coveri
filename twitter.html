@@ -58,6 +58,24 @@
           <p class="text-center">Searching on Twitter for resources like Beds, ICU, Oxygen, Ventilator, Fabiflu, Remdesivir, Favipiravir, Tocilizumab, Plasma, Tiffin.</p>
           <h6 class="text-center">Please SORT by Latest on Twitter.com</h6>
 
+          <form id="form">
+          <div class="mb-3">
+            <!-- <label for="city" class="form-label">City</label> -->
+            <input type="text" name="city" class="form-control" id="city" placeholder="Type a city name" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Bigger cities or areas have resources that are updated frequently.</div>
+          </div>
+          
+          <!-- <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div> -->
+          <div class="text-center">
+          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </div>
+        </form>
+
+        <br><br>
+
 
         <a href="https://twitter.com/search?q=verified+delhi+%28bed+OR+beds+OR+icu+OR+ICUs+OR+oxygen+OR+ventilator+OR+ventilators+OR+remdesivir+OR+remedesivir+OR+remidesivir+OR+fabiflu%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22required%22&amp;f=live" target="_blank" class="btn btn-danger btn-lg">Delhi</a>
 
@@ -94,6 +112,11 @@
         <br>
 
     	<p class="text-center"> All data might be available to public. Do NOT enter any information you don't want to be made public.
+
+        <br><br>
+
+      © 2021 | Please email <a href="mailto:coveriga@gmail.com">coveriga@gmail.com</a> if this site helped you. &#128591;
+
     	</p>
     	</div>
     	</div>
@@ -102,6 +125,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="js/better-share.js"></script>
+
+    <script>
+  $(document).ready(function () {
+    $("#form").on('submit', function (e) {
+      e.preventDefault();
+      window.open("https://twitter.com/search?q=verified+" + $("#city").val() + "+%28bed+OR+beds+OR+icu+OR+oxygen+OR+ventilator+OR+ventilators+OR+fabiflu+OR+remdesivir+OR+favipiravir+OR+tocilizumab+OR+plasma+OR+tiffin+OR+food%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22required%22&f=live", '_blank');
+    });
+  });
+</script>
 
       
   </body>
