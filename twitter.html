@@ -70,11 +70,13 @@
             <label class="form-check-label" for="exampleCheck1">Check me out</label>
           </div> -->
           <div class="text-center">
-          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+          <button type="submit" class="btn btn-dark btn-lg">Search</button>
         </div>
         </form>
 
         <br><br>
+
+        <h5 class="text-center"> Quick Links for Latest Verified Tweets for Resources</h5>
 
 
         <a href="https://twitter.com/search?q=verified+delhi+%28bed+OR+beds+OR+icu+OR+ICUs+OR+oxygen+OR+ventilator+OR+ventilators+OR+remdesivir+OR+remedesivir+OR+remidesivir+OR+fabiflu%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22required%22&amp;f=live" target="_blank" class="btn btn-danger btn-lg">Delhi</a>
@@ -130,7 +132,7 @@
   $(document).ready(function () {
     $("#form").on('submit', function (e) {
       e.preventDefault();
-      window.open("https://twitter.com/search?q=verified+" + $("#city").val() + "+%28bed+OR+beds+OR+icu+OR+oxygen+OR+ventilator+OR+ventilators+OR+fabiflu+OR+remdesivir+OR+favipiravir+OR+tocilizumab+OR+plasma+OR+tiffin+OR+food%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22required%22&f=live", '_blank');
+      window.open("https://twitter.com/search?q=verified+" + $("#city").val() + "+%28bed+OR+beds+OR+icu+OR+oxygen+OR+ventilator+OR+ventilators+OR+fabiflu+OR+remdesivir+OR+remedesivir+OR+remidesivir+OR+favipiravir+OR+tocilizumab+OR+plasma+OR+tiffin+OR+food%29+-%22not+verified%22+-%22unverified%22+-%22needed%22+-%22required%22&f=live", '_blank');
     });
   });
 </script>
